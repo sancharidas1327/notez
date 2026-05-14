@@ -1,0 +1,108 @@
+export const SUBJECT_GROUPS = [
+  {
+    label: "First Year / Core",
+    subjects: [
+      "Engineering Mathematics",
+      "Engineering Physics",
+      "Engineering Chemistry",
+      "Basic Electrical Engineering",
+      "Basic Electronics",
+      "Engineering Mechanics",
+      "Engineering Graphics",
+      "Environmental Science",
+      "Professional Communication",
+    ],
+  },
+  {
+    label: "Computer Science",
+    subjects: [
+      "Programming",
+      "Data Structures",
+      "Algorithms",
+      "Object Oriented Programming",
+      "Database Management Systems",
+      "Operating Systems",
+      "Computer Networks",
+      "Software Engineering",
+      "Web Development",
+      "Artificial Intelligence",
+      "Machine Learning",
+      "Cyber Security",
+      "Cloud Computing",
+    ],
+  },
+  {
+    label: "Electronics / ECE",
+    subjects: [
+      "Digital Electronics",
+      "Analog Electronics",
+      "Signals and Systems",
+      "Network Theory",
+      "Microprocessors",
+      "Microcontrollers",
+      "VLSI",
+      "Communication Systems",
+      "Embedded Systems",
+      "Control Systems",
+    ],
+  },
+  {
+    label: "Electrical / EEE",
+    subjects: [
+      "Electrical Machines",
+      "Power Systems",
+      "Power Electronics",
+      "Circuit Theory",
+      "Electrical Measurements",
+      "Renewable Energy",
+      "High Voltage Engineering",
+    ],
+  },
+  {
+    label: "Mechanical",
+    subjects: [
+      "Thermodynamics",
+      "Fluid Mechanics",
+      "Strength of Materials",
+      "Manufacturing Technology",
+      "Machine Design",
+      "Heat Transfer",
+      "Theory of Machines",
+      "Automobile Engineering",
+      "CAD/CAM",
+    ],
+  },
+  {
+    label: "Civil",
+    subjects: [
+      "Surveying",
+      "Structural Analysis",
+      "Concrete Technology",
+      "Geotechnical Engineering",
+      "Transportation Engineering",
+      "Water Resources",
+      "Construction Management",
+      "Building Materials",
+    ],
+  },
+  {
+    label: "General",
+    subjects: ["Aptitude", "Placement Prep", "Economics", "Management", "Other"],
+  },
+];
+
+export const SUBJECTS = SUBJECT_GROUPS.flatMap((group) => group.subjects);
+export const BROWSE_SUBJECTS = ["All", ...SUBJECTS];
+export const FEATURED_BROWSE_SUBJECTS = [
+  "All",
+  "Engineering Mathematics",
+  "Programming",
+  "Data Structures",
+  "Database Management Systems",
+  "Operating Systems",
+  "Computer Networks",
+  "Digital Electronics",
+  "Thermodynamics",
+  "Strength of Materials",
+  "Other",
+];

@@ -1,0 +1,21 @@
+services:
+  - type: web
+    name: notez-backend
+    runtime: node
+    rootDir: notez-backend
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: STORAGE_DRIVER
+        value: gridfs
+      - key: GRIDFS_BUCKET
+        value: noteUploads
+      - key: MONGO_URI
+        sync: false
+      - key: JWT_SECRET
+        sync: false
+      - key: CLIENT_URL
+        sync: false
